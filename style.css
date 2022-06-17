@@ -1,0 +1,288 @@
+@import url("https://fonts.google.com/specimen/Poppins");
+@import url("https://fontawesome.com/");
+@import url("https://icomoon.io/");
+@import url("https://ionicons.com/");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  display: flex;
+  place-items: center;
+  min-height: 100vh;
+  font-size: 18px;
+  flex-direction: column;
+  background-color: grey;
+  font-family: url("https://fonts.google.com/specimen/Open+Sans");
+  font-weight: 700px;
+}
+
+/*Beginning of main section*/
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  width: 40%;
+}
+/*Beginning of Hero Section*/
+.top-container {
+  display: grid;
+  place-items: center;
+  grid-template-areas:
+    "A B"
+    "C D";
+  gap: 50px;
+  background-color: hsl(193, 100%, 96%);
+  background-image: url("./images/bg-hero-desktop.svg");
+  width: auto;
+}
+
+.top-container div {
+  padding: 10px;
+  text-align: left;
+  margin: 20px;
+}
+
+.H-A {
+  grid-area: "A";
+}
+.H-A img {
+  width: 200px;
+}
+
+.H-B {
+  grid-area: "B";
+}
+.top-head-button {
+  background-color: white;
+  text-align: center;
+  padding: 15px;
+  border: 0px;
+  border-radius: 20px;
+  width: 150px;
+  height: auto;
+}
+.H-C {
+  grid-area: "C";
+}
+.H-C h1 {
+  color: hsl(192, 100%, 9%);
+  padding: 20px;
+}
+.H-C p {
+  color: hsl(208, 11%, 55%);
+  padding: 20px;
+}
+.H-C button {
+  background-color: hsl(322, 100%, 66%);
+  margin-top: 15px;
+  text-align: center;
+  color: white;
+  padding: 20px;
+  border: 0px;
+  border-radius: 20px;
+  width: 200px;
+  height: auto;
+}
+
+.H-D {
+  grid-area: "D";
+}
+.H-D img {
+  width: 500px;
+  height: 400px;
+} /*End of Hero Section*/
+
+.grow-together-container,
+.Flow-Conversation,
+.Your-user-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 30px;
+  background-color: rgb(236, 228, 228);
+  padding: 10px;
+  place-items: center;
+  margin: 40px;
+  border-radius: 10px;
+  width: 800px;
+  height: 300px;
+  box-shadow: 0px 6px #f5ececf6;
+}
+
+.grow-together-container div,
+.Your-user-container div,
+.Flow-Conversation div {
+  place-items: center;
+  margin: 20px;
+}
+
+.grow-together-container div h4,
+.Flow-Conversation div h4,
+.Your-user-container div h4 {
+  padding: 5px;
+  color: hsl(192, 100%, 9%);
+}
+
+.grow-together-container div p,
+.Flow-Conversation div p,
+.Your-user-container div p {
+  padding: 5px;
+  color: hsl(208, 11%, 55%);
+}
+.image img {
+  padding: 20px;
+  width: 250px;
+  height: 200px;
+} /*End of main Section*/
+
+/*Beginning of footer*/
+.footer-container {
+  display: grid;
+  place-items: center;
+  grid-template-rows: auto auto;
+}
+
+.footer-top {
+  display: grid;
+  place-items: center;
+  grid-template-rows: auto auto;
+  padding: 20px;
+  width: 500px;
+  height: 150px;
+  background-color: rgb(250, 249, 249);
+  border-radius: 10px;
+  box-shadow: 0px 10px rgb(247, 234, 234);
+}
+.footer-top h2 {
+  color: hsl(192, 100%, 9%);
+  font-size: 1em;
+}
+.footer-top button {
+  background-color: hsl(322, 72%, 73%);
+  color: white;
+  text-align: center;
+  padding: 15px;
+  border: 0px;
+  border-radius: 20px;
+  width: 200px;
+  height: auto;
+  margin-top: 10px;
+}
+
+.footer-bottom {
+  background-color: hsl(192, 100%, 9%);
+  margin: -10px 20px 0px;
+  padding: 50px;
+  display: grid;
+  place-items: center;
+  grid-template-columns: auto auto auto auto;
+  width: 1000px;
+  height: 400px;
+  font-size: 15px;
+  gap: 30px;
+}
+.footer-bottom div {
+  padding: 40px 20px 5px 20px;
+  color: white;
+}
+.first-column-container,
+.second-column-container,
+.third-column-container {
+  display: grid;
+  place-items: left;
+  padding: 15px;
+  grid-template-rows: auto auto auto auto;
+  margin: 10px;
+  gap: 15px;
+}
+
+.first-column-container p,
+.second-column-container p,
+.third-column-container p {
+  padding: 10px;
+}
+
+.text span {
+  padding: 10px;
+  text-align: center;
+  word-wrap: wrap;
+}
+
+.second-column-container a {
+  color: white;
+}
+
+/*Beginning of media queries*/
+@media (max-width: 768px) {
+  body {
+    font-size: small;
+    font-weight: 400px;
+    background-color: aqua;
+  }
+
+  .top-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(193, 100%, 96%);
+    background-image: url("./images/bg-hero-mobile.svg");
+    width: auto;
+    margin: 20px;
+  }
+
+  .grow-together-container,
+  .Flow-Conversation,
+  .Your-user-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: auto;
+    height: auto;
+    margin: 20px;
+  }
+
+  .grow-together-container div,
+  .Your-user-container div,
+  .Flow-Conversation div {
+    margin: 10px;
+  }
+
+  .footer-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    flex-direction: column;
+  }
+
+  .footer-bottom {
+    width: auto;
+    height: auto;
+    font-size: 10px;
+    gap: 5px;
+  }
+
+  .first-column-container,
+  .second-column-container,
+  .third-column-container {
+    padding: 7px;
+    margin: 5px;
+    gap: 10px;
+  }
+  .copy {
+    text-align: right;
+    margin: 5px;
+    font-size: 5px;
+    font-weight: bold;
+    color: white;
+    background-color: hsl(192, 100%, 9%);
+  }
+}
